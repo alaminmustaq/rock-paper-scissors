@@ -40,7 +40,7 @@ function playGames(player){
   }
 
   document.querySelector('.js-result').innerHTML = `${result}`;
-  document.querySelector('.js-moves').innerHTML = `You <img src="img/${player}-emoji.png" alt="" class="icon"> <img src="img/${comp}-emoji.png" alt="" height="60px" class="icon"> Computer`;
+  document.querySelector('.js-moves').innerHTML = `You <img src="${player}-emoji.png" alt="icon.png" class="icon"> <img src="${comp}-emoji.png" alt="icon.png" class="icon"> Computer`;
   localStorage.setItem("score",JSON.stringify(score));
   updateScoreElement();
   
